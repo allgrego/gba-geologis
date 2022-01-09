@@ -5,7 +5,8 @@ A GBA Logistics microservice to handle Geographical data (countries, continents,
 **Author**: _Gregorio Alvarez < galvarez@gbalogistic.com >_
 **Version**: 1.1.0
 
-> **Last Update:** 08-01-2022
+Based on [GBA Firebase Microservice Boilerplate](https://github.com/allgrego/gba-firebase-microservice-boilerplate).
+**MUST be used with [GBA Firebase Functions Microservices Architecture Boilerplate](https://github.com/allgrego/gba-firebase-functions-microservices-boilerplate)**.
 
 ## Initial Setup
 
@@ -15,12 +16,6 @@ A GBA Logistics microservice to handle Geographical data (countries, continents,
 ```
 Authorization: Bearer {token}
 
-```
-
-To demo access without bearer token you can use the public token query parameter [_NOT RECOMENDED_]. For example:
-
-```
-https://gbageologis.web.app/v1/countries?publictoken=1234
 ```
 
 ## Endpoints
@@ -36,7 +31,7 @@ https://gbageologis.web.app/v1/countries?publictoken=1234
 
 ### GET /countries
 
-Obtain a collection of all countries
+Obtain a paginated collection of all countries
 
 #### Query Parameters
 
@@ -45,7 +40,7 @@ Obtain a collection of all countries
 | page  | integer   | optional            | 1             | Current page for paginated data           |
 | count | integer   | optional            | 5             | Number of elements per chunk of countries |
 
-Sample request with optional parameters:
+Sample request with parameters:
 
 ```
 https://gbageologis.web.app/v1/countries?page=1&count=2
@@ -90,7 +85,7 @@ Obtain data of a single country for a given ISO-3116 code.
 | ---- | --------- | ------------------- | -------------------------------------------------------------- |
 | code | string    | required            | ISO-3116 country code. It can either be ISO Alpha-2 or Alpha-3 |
 
-Sample request with optional parameters:
+Sample request with parameters:
 
 ```
 https://gbageologis.web.app/v1/countries/ve
@@ -113,7 +108,7 @@ Response:
 
 ### GET /countries/name/{queryName}
 
-Search a country based on a query that matches the country name.
+Search a country based on a query that matches the country name. Obtaining a paginated collection
 
 ### Path Parameters
 
