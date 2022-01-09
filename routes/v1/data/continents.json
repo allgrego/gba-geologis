@@ -1,0 +1,51 @@
+[
+  {
+    "code":"AF",
+    "name": "Africa",
+    "altLangName": {
+      "es": "África"
+    }
+  },
+  {
+    "code":"AN",
+    "name": "Antarctica",
+    "altLangName": {
+      "es": "Antártida"
+    }
+  },
+  {
+    "code":"AS",
+    "name": "Asia",
+    "altLangName": {
+      "es": "Ásia"
+    }
+  },
+  {
+    "code":"EU",
+    "name": "Europe",
+    "altLangName": {
+      "es": "Europa"
+    }
+  },
+  {
+    "code":"NA",
+    "name": "North America",
+    "altLangName": {
+      "es": "Norte América"
+    }
+  },
+  {
+    "code":"OC",
+    "name": "Oceania",
+    "altLangName": {
+      "es": "Oceanía"
+    }
+  },
+  {
+    "code":"SA",
+    "name": "South America",
+    "altLangName": {
+      "es": "América del Sur"
+    }
+  }
+]
